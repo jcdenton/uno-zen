@@ -114,6 +114,11 @@
   }
   &.comments {
     padding: 2rem 0 0 0;
+    div {
+      &.addthis_sharing_toolbox {
+        text-align: center;
+      }
+    }
   }
 
   &.related {
