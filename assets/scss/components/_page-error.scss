@@ -2,6 +2,7 @@ body[data-page="error"] {
   width: 100%;
   height: 100%;
 
+  overflow: hidden;
   font-size: 1rem;
   font-weight: normal;
   line-height: 25px;
@@ -13,13 +14,26 @@ body[data-page="error"] {
   > article {
     @include center-absolute;
   }
+
+  > video {
+    visibility: visible;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+  }
 }
 
 .mayday {
   width: 500px;
-  margin: 150px auto 20px;
+  margin: 100px auto 0;
 
   > h2 {
+    margin: 1rem 0 1rem 0;
     font-size: 24px;
     line-height: 35px;
 
@@ -46,4 +60,8 @@ body[data-page="error"] {
   animation: move 10s infinite;
 
   background: url("/assets/img/astronaut.png") center/cover no-repeat;
+}
+
+#enough-button {
+  display: none;
 }
