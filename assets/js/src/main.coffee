@@ -27,8 +27,7 @@ $ ->
     $('#panic-button').click ->
       location.reload()
     $('#relax-button').click ->
-      $('<video autoplay="" loop="" style="visibility: visible; margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 1207px; height: auto;">
-           <source src="http://belzen.by/resources/themes/belzen_relax.mp4" type="video/mp4">
-           <source src="http://belzen.by/resources/themes/belzen_relax.webm" type="video/webm">
-           <source src="http://belzen.by/resources/themes/belzen_relax.ogv" type="video/ogg">
-         </video>').prependTo 'body'
+      $('body').prepend(
+        $('<video autoplay loop><source src="/assets/video/belzen_relax.mp4"}}" type="video/mp4"></video>'),
+        $('<iframe width="0" height="0" src="https://www.youtube.com/embed/GeB2UKGUgqQ?autoplay=1&controls=0&loop=1" frameborder="0"></iframe>')
+      )

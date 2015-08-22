@@ -11,6 +11,18 @@ body[data-page='error'] {
   > article {
     @include center-absolute;
   }
+
+  > video {
+    visibility: visible;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+  }
 }
 .mayday {
   width: 500px;
