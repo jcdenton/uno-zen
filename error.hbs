@@ -25,13 +25,16 @@
           </h2>
         </div>
         <div class="astro-options">
-          <a id="panic-button" class="btn small" href="#">Panic button</a>
-          <a id="relax-button" class="btn small" href="#">Relax button</a>
+          <a id="panic-button" class="btn small" href="#">Panic!</a>
+          <a id="relax-button" class="btn small" href="#">Relax...</a>
+          <a id="enough-button" class="btn small" href="#">Enough!</a>
         </div>
+        <div id="relax-player"></div>
       </section>
     </article>
     {{ghost_foot}}
     <script type="text/javascript" src="{{asset "js/uno.js"}}"></script>
+    <script type="text/javascript" src="https://www.youtube.com/iframe_api" async></script>
     {{> google-analytics}}
   </body>
 </html>

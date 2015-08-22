@@ -26,9 +26,10 @@ body[data-page='error'] {
 }
 .mayday {
   width: 500px;
-  margin: 100px auto 20px;
+  margin: 100px auto 0;
 
   > h2 {
+    margin: 1rem 0 1rem 0;
     font-size: 24px;
     line-height: 35px;
     color: $gray-lightest;
@@ -50,4 +51,8 @@ body[data-page='error'] {
   background: url('/assets/img/astronaut.png');
   transform: translate(0, 50px);
   animation: move 10s infinite;
+}
+
+#enough-button {
+  display: none;
 }
