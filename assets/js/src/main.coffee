@@ -45,10 +45,13 @@ $ ->
           height: '0',
           width: '0',
           videoId: 'GeB2UKGUgqQ',
-          playerVars: {
-            autoplay: true,
-            loop: true,
-          },
+          playerVars:
+            autoplay: false,
+            loop: true
+          events:
+            onReady: (e) ->
+              player.setVolume(player.getVolume() / 2)
+              player.playVideo()
         })
       else
         player.playVideo()
