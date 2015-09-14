@@ -1,5 +1,9 @@
 #search-container {
   margin-top: 1.5rem;
+
+  &::before {
+    margin-top: 25px;
+  }
 }
 #search-form {
   padding: .25rem 0;
